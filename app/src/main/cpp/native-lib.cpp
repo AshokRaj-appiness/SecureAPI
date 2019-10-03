@@ -8,6 +8,10 @@ Java_com_example_secureapi_MainActivity_stringFromJNI(
     std::string hello = "Hello from C++";
     return env->NewStringUTF(hello.c_str());
 }
+// packagename_activityname_methodname
+//packagename:Java_com_example_secureapi_viewmodel
+//class name:MyViewModel
+//method name:getToken
 
 extern "C" JNIEXPORT jstring JNICALL
 Java_com_example_secureapi_viewmodel_MyViewModel_getToken(
